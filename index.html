@@ -8,6 +8,9 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Boxicons for icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -17,7 +20,13 @@
   <header class="header">
     <div class="container">
       <a href="#" class="logo">Taha <span>Saif</span></a>
-      <nav class="navbar">
+      
+      <!-- Hamburger Menu -->
+      <div class="menu-toggle" id="menu-toggle">
+        <i class='bx bx-menu'></i>
+      </div>
+
+      <nav class="navbar" id="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -54,14 +63,12 @@
     </div>
   </section>
 
-<!-- Projects Section -->
 <section class="projects" id="projects">
   <div class="container">
     <h2>My <span>Projects</span></h2>
 
     <div class="projects-grid">
 
-      <!-- Web Development Projects -->
       <div class="project-card">
         <a href="https://image-gallery-using-js.vercel.app/">
           <img src="./assets/images/image-gallery.jpg" alt="Image Gallery">
@@ -102,7 +109,182 @@
         </a>
       </div>
 
-      <!-- Next.js Projects -->
+      <div class="project-card">
+        <a href="https://count-down-timer-iota-self.vercel.app/">
+          <img src="./assets/images/countdown-timer.jpg" alt="Countdown Timer">
+          <h3>Countdown Timer</h3>
+          <p>Next.js</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="https://weather-widget-app-three.vercel.app/">
+          <img src="./assets/images/weather-app.jpg" alt="Weather App">
+          <h3>Weather App</h3>
+          <p>Next.js</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="https://birthday-wishes-app-3d-ti69.vercel.app/">
+          <img src="./assets/images/birthday-wishes-app.jpg" alt="Birthday Wishes App">
+          <h3>Birthday Wishes App</h3>
+          <p>Next.js</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="https://random-jokes-generator-app-b8qx.vercel.app/">
+          <img src="./assets/images/random-jokes-app.jpg" alt="Random Jokes Generator">
+          <h3>Random Jokes Generator App</h3>
+          <p>Next.js</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="https://password-generator-app-k3w8.vercel.app/">
+          <img src="./assets/images/password-generator-app.jpg" alt="Password Generator App">
+          <h3>Password Generator App</h3>
+          <p>Next.js</p>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container contact-content">
+      <h2>Contact <span>Me</span></h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="6" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Taha Saif. All Rights Reserved.</p>
+      <p>Email: <a href="mailto:tahasaif454@example.com">tahasaif@example.com</a></p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top"><i class='bx bx-up-arrow-alt'></i></button>
+
+  <!-- Lightbox Popup -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taha Saif Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">Taha <span>Saif</span></a>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Hello, I'm <span>Taha Saif</span></h1>
+        <p>A passionate FrontEnd Developer & aspiring AI Engineer. I create interactive websites and love learning new technologies to build the future.</p>
+        <a href="#" class="btn">Download CV</a>
+      </div>
+      <div class="hero-img">
+        <img src="./assets/images/profile.jpeg" alt="Taha Saif">
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container about-content">
+      <h2>About <span>Me</span></h2>
+      <p>Hello! I'm Taha Saif, a student and aspiring FrontEnd Developer. I enjoy creating beautiful and functional web applications. Currently exploring AI Engineering and building my programming skills in Python, TypeScript, and JavaScript.</p>
+      <ul class="skills">
+        <li>HTML & CSS</li>
+        <li>JavaScript & TypeScript</li>
+        <li>Next.js & React</li>
+        <li>UI/UX Design</li>
+      </ul>
+    </div>
+  </section>
+
+<section class="projects" id="projects">
+  <div class="container">
+    <h2>My <span>Projects</span></h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <a href="https://image-gallery-using-js.vercel.app/">
+          <img src="./assets/images/image-gallery.jpg" alt="Image Gallery">
+          <h3>Image Gallery</h3>
+          <p>Web Development</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="https://form-validation-using-js-gamma.vercel.app/">
+          <img src="./assets/images/form-validation.jpg" alt="Form Validation">
+          <h3>Form Validation</h3>
+          <p>Web Development</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="https://text-editor-using-js.vercel.app/">
+          <img src="./assets/images/text-editor.jpg" alt="Text Editor">
+          <h3>Text Editor</h3>
+          <p>Web Development</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="https://travel-agency-website-flax.vercel.app/">
+          <img src="./assets/images/travel-agency-website.jpg" alt="Travel Agency Website">
+          <h3>Travel Agency Website</h3>
+          <p>Web Development</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="https://responsive-landing-page-green.vercel.app/">
+          <img src="./assets/images/responsive-landing-page.jpg" alt="Responsive Landing Page">
+          <h3>Responsive Landing Page</h3>
+          <p>Web Development</p>
+        </a>
+      </div>
+
       <div class="project-card">
         <a href="https://count-down-timer-iota-self.vercel.app/">
           <img src="./assets/images/countdown-timer.jpg" alt="Countdown Timer">
@@ -148,7 +330,6 @@
 </section>
 
 
-  <!-- Contact Section -->
   <section class="contact" id="contact">
     <div class="container contact-content">
       <h2>Contact <span>Me</span></h2>
@@ -161,18 +342,16 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <p>&copy; 2025 Taha Saif. All Rights Reserved.</p>
       <p>Email: <a href="mailto:tahasaif454@example.com">tahasaif@example.com</a></p>
     </div>
   </footer>
-<!-- Back to Top Button -->
-<button id="back-to-top"><i class='bx bx-up-arrow-alt'></i></button>
 
 </body>
 </html>
 
 
 
+ -->
