@@ -1,246 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taha Saif Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taha Saif Portfolio</title>
 
-    <!-- Box Icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <a href="#" class="logo">Taha <span>Saif</span></a>
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">Taha <span>Saif</span></a>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Home Section -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3><span>Hello,</span> It's Me</h3>
-            <h1>Taha Saif</h1>
-            <h3>A <span>FrontEnd Developer</span></h3>
-            <p><span>"</span>Aspiring Cloud AI Engineer <span>|</span> Passionate Student of Certified Cloud Applied GenEng (AI Engineering)<span>" |</span> Learning Python, TypeScript, and Diverse Programming Languages <span>|</span> Eager to Learn and Contribute to the Future of AI<span>.</span></p>
-            <div class="social-media">
-                <a href="https://github.com/Tahasaif3"><i class='bx bxl-github'></i></a>
-                <a href="https://www.youtube.com/tahasaif7521"><i class='bx bxl-youtube '></i></a>
-                <a href="https://www.instagram.com/taha_saif44/"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="https://www.linkedin.com/in/taha-saif-842269261/"><i class='bx bxl-linkedin'></i></a>
-            </div>
-            <a href="#" class="btn">Download CV</a>
-        </div>       
-        <div class="home-img">
-        </div>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Hello, I'm <span>Taha Saif</span></h1>
+        <p>A passionate FrontEnd Developer & aspiring AI Engineer. I create interactive websites and love learning new technologies to build the future.</p>
+        <a href="#" class="btn">Download CV</a>
+      </div>
+      <div class="hero-img">
+        <img src="images/profile.png" alt="Taha Saif">
+      </div>
+    </div>
+  </section>
 
-    </section>
+  <!-- About Me Section -->
+  <section class="about" id="about">
+    <div class="container about-content">
+      <h2>About <span>Me</span></h2>
+      <p>Hello! I'm Taha Saif, a student and aspiring FrontEnd Developer. I enjoy creating beautiful and functional web applications. Currently exploring AI Engineering and building my programming skills in Python, TypeScript, and JavaScript.</p>
+      <ul class="skills">
+        <li>HTML & CSS</li>
+        <li>JavaScript & TypeScript</li>
+        <li>Next.js & React</li>
+        <li>UI/UX Design</li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/vecteezy_3d-masculino-personaje-obtiene-un-idea-mientras-sentado-en_24658938.png" alt="">
-        </div>
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>A Web Developer!</h3>
-            <p>Hello, I'm Taha Saif, a 16-year-old student with a deep passion for technology and a keen interest in Certified Cloud Applied Generative AI Engineering (GenEng). While I'm just starting my educational journey, I'm excited about the possibilities that technology holds for the future.</p>
-            <a href="#" class="btn">Read More</a>
-        </div>
-    </section>
+<!-- Projects Section -->
+<section class="projects" id="projects">
+  <div class="container">
+    <h2>My <span>Projects</span></h2>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <h2 class="heading">Our <span>Services</span></h2>
-        <div class="services-container">
-            <div class="services-box">
-                <i class='bx bx-code-alt'></i>
-                <h3>Web Development</h3>
-                <p>Web development refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-            <div class="services-box">
-                <i class='bx bxs-paint'></i>
-                <h3>Graphic Design</h3>
-                <p>Graphic design is a form of communication that uses colors, shapes, images, and words to create visual content that surrounds us in digital media.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-            <div class="services-box">
-                <i class='bx bx-bar-chart-alt'></i>
-                <h3>Digital Marketing</h3>
-                <p>Digital marketing, also called online marketing, is the promotion of brands to connect with potential customers using the internet and other forms of digital communication.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-        </div>
-    </section>
+    <div class="projects-grid">
 
-    <!-- Portfolio Section -->
-    <article class="portfolio" id="portfolio">
+      <!-- Web Development Projects -->
+      <div class="project-card">
+        <a href="https://image-gallery-using-js.vercel.app/">
+          <img src="./assets/images/image-gallery.jpg" alt="Image Gallery">
+          <h3>Image Gallery</h3>
+          <p>Web Development</p>
+        </a>
+      </div>
 
-        <header>
-            <h2 class="h2 article-title">Portfolio</h2>
-        </header>
+      <div class="project-card">
+        <a href="https://form-validation-using-js-gamma.vercel.app/">
+          <img src="./assets/images/form-validation.jpg" alt="Form Validation">
+          <h3>Form Validation</h3>
+          <p>Web Development</p>
+        </a>
+      </div>
 
-        <section class="projects">
+      <div class="project-card">
+        <a href="https://text-editor-using-js.vercel.app/">
+          <img src="./assets/images/text-editor.jpg" alt="Text Editor">
+          <h3>Text Editor</h3>
+          <p>Web Development</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="https://travel-agency-website-flax.vercel.app/">
+          <img src="./assets/images/travel-agency-website.jpg" alt="Travel Agency Website">
+          <h3>Travel Agency Website</h3>
+          <p>Web Development</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="https://responsive-landing-page-green.vercel.app/">
+          <img src="./assets/images/responsive-landing-page.jpg" alt="Responsive Landing Page">
+          <h3>Responsive Landing Page</h3>
+          <p>Web Development</p>
+        </a>
+      </div>
+
+      <!-- Next.js Projects -->
+      <div class="project-card">
+        <a href="https://count-down-timer-iota-self.vercel.app/">
+          <img src="./assets/images/countdown-timer.jpg" alt="Countdown Timer">
+          <h3>Countdown Timer</h3>
+          <p>Next.js</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="https://weather-widget-app-three.vercel.app/">
+          <img src="./assets/images/weather-app.jpg" alt="Weather App">
+          <h3>Weather App</h3>
+          <p>Next.js</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="https://birthday-wishes-app-3d-ti69.vercel.app/">
+          <img src="./assets/images/birthday-wishes-app.jpg" alt="Birthday Wishes App">
+          <h3>Birthday Wishes App</h3>
+          <p>Next.js</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="https://random-jokes-generator-app-b8qx.vercel.app/">
+          <img src="./assets/images/random-jokes-app.jpg" alt="Random Jokes Generator">
+          <h3>Random Jokes Generator App</h3>
+          <p>Next.js</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="https://password-generator-app-k3w8.vercel.app/">
+          <img src="./assets/images/password-generator-app.jpg" alt="Password Generator App">
+          <h3>Password Generator App</h3>
+          <p>Next.js</p>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container contact-content">
+      <h2>Contact <span>Me</span></h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="6" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-            <!-- Projects List -->
-            <ul class="project-list">
-                <!-- Web Development Projects -->
-                <li class="project-item active" data-filter-item data-category="web development">
-                    <a href="https://image-gallery-using-js.vercel.app/">
-                        <figure class="project-img">
-                            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                            <img src="./assets/images/image-gallery.jpg" alt="Image Gallery" loading="lazy">
-                        </figure>
-                        <h3 class="project-title">Image Gallery</h3>
-                        <p class="project-category">Web Development</p>
-                    </a>
-                </li>
-                <li class="project-item active" data-filter-item data-category="web development">
-                    <a href="https://form-validation-using-js-gamma.vercel.app/">
-                        <figure class="project-img">
-                            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                            <img src="./assets/images/form-validation.jpg" alt="Form Validation" loading="lazy">
-                        </figure>
-                        <h3 class="project-title">Form Validation</h3>
-                        <p class="project-category">Web Development</p>
-                    </a>
-                </li>
-                <li class="project-item active" data-filter-item data-category="web development">
-                    <a href="https://text-editor-using-js.vercel.app/">
-                        <figure class="project-img">
-                            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                            <img src="./assets/images/text-editor.jpg" alt="Text Editor" loading="lazy">
-                        </figure>
-                        <h3 class="project-title">Text Editor</h3>
-                        <p class="project-category">Web Development</p>
-                    </a>
-                </li>
-                <li class="project-item active" data-filter-item data-category="web development">
-                    <a href="https://travel-agency-website-flax.vercel.app/">
-                        <figure class="project-img">
-                            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                            <img src="./assets/images/travel-agency-website.jpg" alt="Travel Agency Website" loading="lazy">
-                        </figure>
-                        <h3 class="project-title">Travel Agency Website</h3>
-                        <p class="project-category">Web Development</p>
-                    </a>
-                </li>
-                <li class="project-item active" data-filter-item data-category="web development">
-                    <a href="https://responsive-landing-page-green.vercel.app/">
-                        <figure class="project-img">
-                            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                            <img src="./assets/images/responsive-landing-page.jpg" alt="Responsive Landing Page" loading="lazy">
-                        </figure>
-                        <h3 class="project-title">Responsive Landing Page</h3>
-                        <p class="project-category">Web Development</p>
-                    </a>
-                </li>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Taha Saif. All Rights Reserved.</p>
+      <p>Email: <a href="mailto:tahasaif@example.com">tahasaif@example.com</a></p>
+    </div>
+  </footer>
 
-                <!-- Next.js Projects -->
-                <li class="project-item active" data-filter-item data-category="next.js projects">
-                    <a href="https://count-down-timer-iota-self.vercel.app/">
-                        <figure class="project-img">
-                            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                            <img src="./assets/images/countdown-timer.jpg" alt="Countdown Timer" loading="lazy">
-                        </figure>
-                        <h3 class="project-title">Countdown Timer</h3>
-                        <p class="project-category">Next.js</p>
-                    </a>
-                </li>
-                <li class="project-item active" data-filter-item data-category="next.js projects">
-                    <a href="https://weather-widget-app-three.vercel.app/">
-                        <figure class="project-img">
-                            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                            <img src="./assets/images/weather-app.jpg" alt="Weather App" loading="lazy">
-                        </figure>
-                        <h3 class="project-title">Weather App</h3>
-                        <p class="project-category">Next.js</p>
-                    </a>
-                </li>
-                <li class="project-item active" data-filter-item data-category="next.js projects">
-                    <a href="https://birthday-wishes-app-3d-ti69.vercel.app/">
-                        <figure class="project-img">
-                            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                            <img src="./assets/images/birthday-wishes-app.jpg" alt="Birthday Wishes App" loading="lazy">
-                        </figure>
-                        <h3 class="project-title">Birthday Wishes App</h3>
-                        <p class="project-category">Next.js</p>
-                    </a>
-                </li>
-                <li class="project-item active" data-filter-item data-category="next.js projects">
-                    <a href="https://random-jokes-generator-app-b8qx.vercel.app/">
-                        <figure class="project-img">
-                            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                            <img src="./assets/images/random-jokes-app.jpg" alt="Random Jokes Generator" loading="lazy">
-                        </figure>
-                        <h3 class="project-title">Random Jokes Generator App</h3>
-                        <p class="project-category">Next.js</p>
-                    </a>
-                </li>
-                <li class="project-item active" data-filter-item data-category="next.js projects">
-                    <a href="https://password-generator-app-k3w8.vercel.app/">
-                        <figure class="project-img">
-                            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                            <img src="./assets/images/password-generator-app.jpg" alt="Password Generator App" loading="lazy">
-                        </figure>
-                        <h3 class="project-title">Password Generator App</h3>
-                        <p class="project-category">Next.js</p>
-                    </a>
-                </li>
-            </ul>
-
-        </section>
-    </article>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email Address" required>
-            </div>
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number" required>
-                <input type="text" placeholder="Email Subject" required>
-            </div>
-            <textarea cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <input type="submit" value="Send message" class="btn">
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright <span>&copy;</span> 2024 By <span>Taha Saif</span> | All Rights Reserved</p>
-        </div>
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
-    </footer>
-
-    <!-- Custom JS -->
-    <script src="script.js"></script>
 </body>
 </html>
-
-
-
