@@ -308,6 +308,58 @@ body {
   color: var(--text-color);
   cursor: pointer;
 }
+/* Filter Buttons */
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.filter-btn {
+  background: var(--secondary-bg);
+  color: var(--text-color);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin: 0 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+.filter-btn.active,
+.filter-btn:hover {
+  background: var(--primary-color);
+  color: var(--bg-color);
+}
+
+/* Project Card Hover */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.project-info {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  transition: bottom 0.3s ease;
+}
+.project-card:hover .project-info {
+  bottom: 0;
+}
 
 /* Responsive Navbar */
 @media screen and (max-width: 768px) {
@@ -338,3 +390,4 @@ body {
     width: 200px;
   }
 }
+
