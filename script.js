@@ -1,36 +1,52 @@
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.getElementById("navbar");
 
-menuIcon.oneclick = () => {
-    menuIcon.classList.toggle('bx bx-x')
-    navbar.classList.toggle('active')
-};
+menuToggle.addEventListener("click", () => {
+  navbar.classList.toggle("show");
+});
 
-let sections = document.querySelectorAll('section');
-let navlinks = document.querySelectorAll('header nav a');
-
-Windows.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-
-        if(top >= offset && top < offset + height){
-        navlinks.forEach(link => {
-            links.classList.remove('active');
-            document.querySelector('header nav a[href*=' + id +']').classList.add('active');
-        });
-        };
+document.querySelectorAll(".navbar a").forEach(link => {
+  link.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
     });
+    navbar.classList.remove("show");
+  });
+});
 
-    let header = document.querySelector('header');
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.querySelector(".lightbox .close");
 
-    header.classList.toggle('sticky', window.scrollY > 100);
-};
-      
+document.querySelectorAll(".popup-img").forEach(img => {
+  img.addEventListener("click", function(e) {
+    e.preventDefault();
+    lightbox.style.display = "block";
+    lightboxImg.src = this.src;
+  });
+});
 
+closeBtn.addEventListener("click", () => {
+  lightbox.style.display = "none";
+});
 
+window.addEventListener("click", (e) => {
+  if (e.target === lightbox) {
+    lightbox.style.display = "none";
+  }
+});
 
+const backToTop = document.getElementById("back-to-top");
 
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    backToTop.style.display = "block";
+  } else {
+    backToTop.style.display = "none";
+  }
+});
 
+backToTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
